@@ -1,4 +1,18 @@
+@import "../../styles/vars.scss";
+
 .button {
-  background-color: #353535;
-  color: #fff;
+  background-color: $akai-yellow;
+  border: 0;
+  border-radius: 25px;
+  color: $white-text;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding: 15px 45px;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: $akai-yellow-darkened;
+  }
 }
