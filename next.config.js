@@ -1,5 +1,5 @@
 module.exports = {
-  distDir: "build-node",
+  distDir: "build",
   devIndicators: {
     autoPrerender: false,
   },
