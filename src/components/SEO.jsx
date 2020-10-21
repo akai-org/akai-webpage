@@ -24,7 +24,6 @@ const SEO = ({ description, title, image, keywords, children }) => {
       <meta property="og:site_name" content="krychaxp.pl" />
       <meta property="og:type" content="website" />
 
-      <meta name="twitter:creator" content={siteMetadata.author.name} />
       <meta name="twitter:title" content={metaTitle} />
       <meta name="twitter:description" content={metaDescription} />
       <meta name="twitter:image" content={metaImage} />
@@ -33,12 +32,10 @@ const SEO = ({ description, title, image, keywords, children }) => {
 
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
-      <meta name="author" content={siteMetadata.author.name} />
-      <meta name="theme-color" content={siteMetadata.manifest.options.theme_color} />
-      {/* <meta
-        name="google-site-verification"
-        content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}
-      /> */}
+      <meta
+        name="theme-color"
+        content={siteMetadata.manifest.options.theme_color}
+      />
       <link rel="image_src" href={metaImage} />
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="icon" href="/favicon.ico" />
@@ -50,14 +47,11 @@ const SEO = ({ description, title, image, keywords, children }) => {
         <link key={v} rel="preconnect dns-prefetch" href={v} />
       ))}
       {siteMetadata.fonts.map((v) => (
-        <link key={v+"-pre"} rel="preload" as="style" href={v} />
+        <link key={v + "-pre"} rel="preload" as="style" href={v} />
       ))}
       {siteMetadata.fonts.map((v) => (
         <link key={v} rel="stylesheet" href={v} />
       ))}
-      {/* {siteMetadata.scripts.map((v) => (
-        <link key={v} rel="preload" as="script" href={v} />
-      ))} */}
       {children}
     </Helmet>
   );
