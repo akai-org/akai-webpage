@@ -1,14 +1,12 @@
-import Head from "next/head";
+import React from 'react'
 import Button from "../components/Button";
-
+import SEO from '../seo';
 export default function Home() {
   return (
-    <main>
-      <Head>
-        <title>AKAI</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Button>test button</Button>
-    </main>
+    <>
+      <SEO title="Starter page"/>
+      <div>no elo</div>
+      <Button/>
+    </>
   );
 }
