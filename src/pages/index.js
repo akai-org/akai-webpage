@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Button from "../components/Button";
+import Section from "../components/Section";
 
 export default function Home() {
   return (
@@ -8,7 +9,11 @@ export default function Home() {
         <title>AKAI</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Button>test button</Button>
+      <Section>Main</Section>
+      <Section>O AKAI</Section>
+      <Section>Linki jako ikony - Blog, Apps, Kalendarz</Section>
+      <Section>Dołącz do Nas</Section>
+      <Section>Footer</Section>
     </main>
   );
 }
