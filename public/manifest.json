@@ -1,0 +1,23 @@
+{
+    "title": "AKAI app",
+    "short_name": "akai app",
+    "name": "akai app",
+    "description": "Front-end",
+    "start_url": "/",
+    "background_color": "#f9a11b",
+    "theme_color": "#f9a11b",
+    "display": "standalone",
+    "manifest_version": 1,
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "/img/logo.png",
+            "sizes": "512x512 192x192",
+            "type": "image/png"
+        }
+    ]
+}

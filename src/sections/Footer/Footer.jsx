@@ -5,13 +5,12 @@ import { FaFacebookF, FaTwitter, FaBlog } from "react-icons/fa";
 
 export default function index() {
   return (
-    <footer className={classes["footer"]}>
+    <footer className={classes.footer}>
       <div>
-        <h4>AKAI webstarter</h4>
+        <h4>AKAI</h4>
         © 2017-2020
         <br />
         Akademickie Koło Aplikacji Internetowych
-        <Button>Click me</Button>
       </div>
       <div>
         <h4>Kontakt</h4>
@@ -21,7 +20,7 @@ export default function index() {
       </div>
       <div>
         <h4>Znajdź nas</h4>
-        <div className={classes["social"]}>
+        <div className={classes.social}>
           <a
             href="https://www.facebook.com/akai.pp"
             target="_blank"

@@ -34,7 +34,7 @@ const SEO = ({ description, title, image, keywords, children }) => {
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
       <meta name="author" content={siteMetadata.author.name} />
-      <meta name="theme-color" content={siteMetadata.manifest.options.theme_color} />
+      <meta name="theme-color" content={siteMetadata.theme_color} />
       {/* <meta
         name="google-site-verification"
         content={process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION}

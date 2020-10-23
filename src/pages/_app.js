@@ -1,11 +1,6 @@
 import React from "react";
-import Layout from "../layout";
 import "../styles/globals.scss";
 const MyApp = ({ Component, pageProps }) => {
-  return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
-  );
+  return <Component {...pageProps} />;
 };
 export default MyApp;

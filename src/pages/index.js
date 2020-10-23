@@ -1,12 +1,11 @@
 import React from 'react'
-import Button from "../components/Button";
 import SEO from '../seo';
+import Footer from '../sections/Footer'
 export default function Home() {
   return (
     <>
-      <SEO title="Starter page"/>
-      <div>no elo</div>
-      <Button/>
+      <SEO title="AKAI"/>
+      <Footer/>
     </>
   );
 }
