@@ -7,7 +7,7 @@ export default function index() {
   return (
     <footer className={classes["footer"]}>
       <div>
-        <h4>AKAI webstarter</h4>
+        <h4>AKAI</h4>
         © 2017-2020
         <br />
         Akademickie Koło Aplikacji Internetowych
