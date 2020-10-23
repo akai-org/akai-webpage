@@ -41,7 +41,6 @@ const SEO = ({ description, title, image, keywords, children }) => {
       <link rel="icon" href="/favicon.ico" />
       <link rel="apple-touch-icon" href="/favicon.ico" />
       <link rel="robots" href="/robots.txt" />
-      <link rel="manifest" href="/manifest.json" />
       <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
       {siteMetadata.preconnect.map((v) => (
         <link key={v} rel="preconnect dns-prefetch" href={v} />
