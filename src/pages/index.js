@@ -8,6 +8,7 @@ export default function Home() {
   return (
     <main>
       <SEO title="Homepage" />
+      <Header />
       <Section>
         <Title>Main</Title>
       </Section>

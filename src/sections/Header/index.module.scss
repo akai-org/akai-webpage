@@ -1,0 +1,45 @@
+@import "../../styles/vars.scss";
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/img/background.png");
+    background-size: cover;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+    .h1 {
+        position: relative;
+        margin: 15px 0;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 110%;
+            height: 3px;
+            width: 40px;
+            background-color: $akai-yellow-darkened;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    left:0;
+    top:0;
+    & > img {
+        width: 80px;
+    }
+}
+.text {
+    max-width: 600px;
+    margin: 10px;
+    line-height: 2;
+}
