@@ -27,17 +27,15 @@ const linksConfig = [
 export default function LinkIcons() {
   return (
     <Section className={styles.section}>
-      <div className={styles.container}>
-        {linksConfig.map(({ name, description, url, icon }) => (
-          <a href={url} key={name}>
-            <div className={styles.iconContainer}>
-              <Icon icon={icon} className={styles.icon} />
-              <span className={styles.text}>{name}</span>
-              <span className={styles.description}>{description}</span>
-            </div>
-          </a>
-        ))}
-      </div>
+      {linksConfig.map(({ name, description, url, icon }) => (
+        <a href={url} key={name}>
+          <div className={styles.iconContainer}>
+            <Icon icon={icon} className={styles.icon} />
+            <span className={styles.text}>{name}</span>
+            <span className={styles.description}>{description}</span>
+          </div>
+        </a>
+      ))}
     </Section>
   );
 }

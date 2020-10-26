@@ -1,0 +1,68 @@
+@import "./../../styles/vars.scss";
+
+.section {
+  color: $heading-color;
+  display: flex;
+  text-align: center;
+  flex-direction: column-reverse;
+}
+
+.heading {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.copyright {
+  flex-basis: 50%;
+}
+
+.contact {
+  flex-basis: 30%;
+
+  a {
+    color: $heading-color;
+  }
+}
+
+.social {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  fill: $text-color;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.akaiIcon {
+  width: 26px;
+  height: 26px;
+}
+
+@media only screen and (min-width: $tablet) {
+  .section {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .social {
+    align-items: flex-start;
+  }
+}
