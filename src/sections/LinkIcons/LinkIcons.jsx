@@ -3,37 +3,40 @@ import Section from "../../components/Section";
 import Icon, { blog, apps, calendar } from "../../components/Icon";
 import styles from "./LinkIcons.module.scss";
 
+const linksConfig = [
+  {
+    name: "Blog",
+    description: "Poczytaj o tym czym się zajmujemy!",
+    url: "https://blog.akai.org.pl/",
+    icon: blog,
+  },
+  {
+    name: "Apps",
+    description: "Nasze aplikacje i projekty",
+    url: "https://apps.akai.org.pl/",
+    icon: apps,
+  },
+  {
+    name: "Kalendarz",
+    description: "Obserwuj nasze spotkania i wydarzenia!",
+    url: "#",
+    icon: calendar,
+  },
+];
+
 export default function LinkIcons() {
   return (
     <Section className={styles.section}>
       <div className={styles.container}>
-        <a href="https://blog.akai.org.pl/">
-          <div className={styles.iconContainer}>
-            <Icon icon={blog} className={styles.icon} />
-            <span className={styles.text}>Blog</span>
-            <span className={styles.description}>
-              Poczytaj o tym co robimy i&nbsp;czym się zajmujemy!
-            </span>
-          </div>
-        </a>
-        <a href="https://apps.akai.org.pl/">
-          <div className={styles.iconContainer}>
-            <Icon icon={apps} className={styles.icon} />
-            <span className={styles.text}>Apps</span>
-            <span className={styles.description}>
-              Nasze aplikacje i&nbsp;projekty
-            </span>
-          </div>
-        </a>
-        <a href="#">
-          <div className={styles.iconContainer}>
-            <Icon icon={calendar} className={styles.icon} />
-            <span className={styles.text}>Kalendarz</span>
-            <span className={styles.description}>
-              Obserwuj nasze spotkania i&nbsp;wydarzenia!
-            </span>
-          </div>
-        </a>
+        {linksConfig.map(({ name, description, url, icon }) => (
+          <a href={url}>
+            <div className={styles.iconContainer}>
+              <Icon icon={icon} className={styles.icon} />
+              <span className={styles.text}>{name}</span>
+              <span className={styles.description}>{description}</span>
+            </div>
+          </a>
+        ))}
       </div>
     </Section>
   );
