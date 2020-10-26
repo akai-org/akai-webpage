@@ -1,0 +1,53 @@
+@import "../../styles/vars.scss";
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 640px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 90px;
+  height: 90px;
+  margin: 20px 20px 15px;
+  fill: $akai-yellow;
+}
+
+.text {
+  font-size: 25px;
+  font-weight: 600;
+  color: $heading-color;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 15px;
+  font-weight: 500;
+  color: $text-color;
+  text-align: center;
+  max-width: 200px;
+}
+
+@media only screen and (min-width: $mobile) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
