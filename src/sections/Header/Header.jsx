@@ -1,21 +1,22 @@
 import React from "react";
 import classes from "./index.module.scss";
-import Button from "../../components/Button";
 export default function Header() {
   return (
     <header className={classes.header}>
       <div className={classes.top}>
-          <img src="/img/logo.svg"/>
-          <div></div>
+        <img src="/img/logo.svg" />
       </div>
-      <h3>Akai</h3>
-      <h1 className={classes.h1}>Webstarter 2020</h1>
+      <h1 className={classes.title}>
+        Akademickie Koło <br />
+        Aplikacji Internetowych
+      </h1>
+      <div className={classes.space}></div>
       <div className={classes.text}>
-        Zbiór prelekcji wprowadzających w świat webdevelopmentu przygotowanych
-        przez firmy IT we współpracy z Akademickim Kołem Aplikacji
-        Internetowych. Zarezerwuj miejsce
+        Działamy na terenie całego Poznania. Damy Ci szansę rozwinąć Twoją pasję
+        oraz wiedzę. Pokażemy Ci jak rozpocząć karierę bazując na doświadczeniu
+        i umiejętnościach - nie na papierze. Serdecznie zapraszamy do wzięcia
+        udziału w naszych wydarzeniach - są bezpłatne i otwarte dla wszystkich.
       </div>
-      <Button>Zarezerwuj miejsce</Button>
     </header>
   );
 }
