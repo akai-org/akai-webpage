@@ -8,7 +8,7 @@ import LinkIcons from "../sections/LinkIcons/LinkIcons";
 export default function Home() {
   return (
     <main>
-      <SEO title="Homepage" />
+      <SEO />
       <Main />
       <Section>
         <Title>Main</Title>
