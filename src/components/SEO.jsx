@@ -32,10 +32,7 @@ const SEO = ({ description, title, image, keywords, children }) => {
 
       <meta name="description" content={metaDescription} />
       <meta name="keywords" content={metaKeywords} />
-      <meta
-        name="theme-color"
-        content={siteMetadata.manifest.options.theme_color}
-      />
+      <meta name="theme-color" content="#f9a11b" />
       <link rel="image_src" href={metaImage} />
       <link rel="shortcut icon" href="/favicon.ico" />
       <link rel="icon" href="/favicon.ico" />
