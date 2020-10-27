@@ -11,9 +11,6 @@ export default function Home() {
       <SEO />
       <Main />
       <Section>
-        <Title>Main</Title>
-      </Section>
-      <Section>
         <Title alignment="left">O AKAI</Title>
       </Section>
       <LinkIcons />
