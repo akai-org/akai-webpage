@@ -1,6 +1,7 @@
 import React from "react";
-import classes from "./index.module.scss";
-export default function Header() {
+import classes from "./Main.module.scss";
+
+export default function Main() {
   return (
     <header className={classes.header}>
       <div className={classes.top}>
@@ -10,13 +11,14 @@ export default function Header() {
         Akademickie Koło <br />
         Aplikacji Internetowych
       </h1>
-      <div className={classes.space}></div>
-      <div className={classes.text}>
+      <p className={classes.text}>
         Działamy na terenie całego Poznania. Damy Ci szansę rozwinąć Twoją pasję
         oraz wiedzę. Pokażemy Ci jak rozpocząć karierę bazując na doświadczeniu
-        i umiejętnościach - nie na papierze. Serdecznie zapraszamy do wzięcia
-        udziału w naszych wydarzeniach - są bezpłatne i otwarte dla wszystkich.
-      </div>
+        i umiejętnościach - nie na papierze.
+        <br />
+        Serdecznie zapraszamy do wzięcia udziału w naszych wydarzeniach - są
+        bezpłatne i otwarte dla wszystkich.
+      </p>
     </header>
   );
 }

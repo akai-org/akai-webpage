@@ -2,13 +2,14 @@ import React from "react";
 import Section from "../components/Section";
 import SEO from "../components/SEO";
 import Title from "../components/Title";
+import Main from "../sections/Main";
 import LinkIcons from "../sections/LinkIcons/LinkIcons";
 
 export default function Home() {
   return (
     <main>
       <SEO title="Homepage" />
-      <Header />
+      <Main />
       <Section>
         <Title>Main</Title>
       </Section>
