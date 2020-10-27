@@ -1,4 +1,4 @@
-This is a Official AIKI webpage, made by their owners. 
+This is an Official AIKI webpage, made by their owners. 
 Project uses [Next.js](https://nextjs.org/).
 
 ## Getting Started
@@ -64,8 +64,6 @@ A quick look at the top-level files and directories you'll see in a Next.js proj
 - **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
 - **`/public`**: This directory will contain all static files.
-
-- **`.env`**: Environmental variables
 
 - **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
