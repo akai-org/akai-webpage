@@ -29,7 +29,7 @@ export default function LinkIcons() {
     <Section className={styles.section}>
       <div className={styles.container}>
         {linksConfig.map(({ name, description, url, icon }) => (
-          <a href={url}>
+          <a href={url} key={name}>
             <div className={styles.iconContainer}>
               <Icon icon={icon} className={styles.icon} />
               <span className={styles.text}>{name}</span>
