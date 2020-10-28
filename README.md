@@ -9,7 +9,7 @@ Project uses [Next.js](https://nextjs.org/).
 
     `$ git clone https://github.com/akai-org/akai-webpage.git`
     
- - Enter to this directory project `C:/../../aiki-webpage`
+    `$ cd aiki-webpage`
 
  - Install packages:
  
@@ -50,7 +50,6 @@ A quick look at the top-level files and directories you'll see in a Next.js proj
     ├── node_modules
     ├── public
     ├── src
-    ├── .env
     ├── .gitignore
     ├── next.config.js
     ├── package-lock.json
