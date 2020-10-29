@@ -1,30 +1,75 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is an Official AIKI webpage, made by their owners. 
+Project uses [Next.js](https://nextjs.org/).
 
 ## Getting Started
 
-First, run the development server:
+ - First, download [Node.js](https://nodejs.org/en/)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+ - Open the folder you want to work in, run terminal and clone repo:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    `$ git clone https://github.com/akai-org/akai-webpage.git`
+    
+    `$ cd aiki-webpage`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+ - Install packages:
+ 
+    `$ npm install`
 
-## Learn More
+## Commands
 
-To learn more about Next.js, take a look at the following resources:
+**Start developing.**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Navigate into your new site’s directory and start it up.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`$ npm run dev`
 
-## Deploy on Vercel
+Now your site is now running at `http://localhost:3000`!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Build production**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`$ npm run build`
+
+To change build name, enter to `package.json` and change name after `-o` (default is `out`). 
+`next export ` works only for SSG !:
+
+    {
+        ...
+        "scripts": {
+            "build": "next build && next export -o build",
+            ...,
+        },
+        ...
+    },
+
+## What's inside?
+
+A quick look at the top-level files and directories you'll see in a Next.js project.
+
+    .
+    ├── config
+    ├── node_modules
+    ├── public
+    ├── src
+    ├── .gitignore
+    ├── next.config.js
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
+
+- **`/config`**: This file has global informations about aplication. 
+
+- **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+
+- **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+- **`/public`**: This directory will contain all static files.
+
+- **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+
+- **`next.config.js`**: This is the main configuration file for a Next.js site. This is where you can specify information about your build, PWA, scripts and serverless.
+
+- **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+
+- **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+
+- **`README.md`**: A text file containing useful reference information about your project.
