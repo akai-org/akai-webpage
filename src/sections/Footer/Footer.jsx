@@ -1,8 +1,22 @@
 import React from "react";
 import Section from "../../components/Section";
-import Icon, { facebook, twitter } from "../../components/Icon";
-import AkaiIcon from "../../assets/logo-grey.svg";
+import Icon, { facebook, twitter, github } from "../../components/Icon";
 import styles from "./Footer.module.scss";
+
+const socialIcons = [
+  {
+    url: "https://www.facebook.com/akai.pp",
+    icon: facebook,
+  },
+  {
+    url: "https://twitter.com/akai_pp",
+    icon: twitter,
+  },
+  {
+    url: "https://github.com/akai-org/akai-webpage",
+    icon: github,
+  },
+];
 
 export default function Footer() {
   return (
@@ -18,17 +32,13 @@ export default function Footer() {
         </a>
       </div>
       <div className={styles.social}>
-        <h4 className={styles.heading}>Znajdź nas</h4>
+        <h2 className={styles.heading}>Znajdź nas</h2>
         <div className={styles.socialIcons}>
-          <a className={styles.icon} href="https://www.facebook.com/akai.pp">
-            <Icon icon={facebook} />
-          </a>
-          <a className={styles.icon} href="https://twitter.com/akai.pp">
-            <Icon icon={twitter} />
-          </a>
-          <a className={styles.icon} href="https://blog.akai.org.pl/">
-            <AkaiIcon className={styles.akaiIcon} />
-          </a>
+          {socialIcons.map(({ url, icon }) => (
+            <a href={url} target="_blank" rel="noopener" key={url}>
+              <Icon icon={icon} className={styles.icon} />
+            </a>
+          ))}
         </div>
       </div>
     </Section>

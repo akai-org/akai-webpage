@@ -5,6 +5,7 @@ import {
   mdiCalendar,
   mdiFacebook,
   mdiTwitter,
+  mdiGithub,
 } from "@mdi/js";
 
 export {
@@ -14,4 +15,5 @@ export {
   mdiCalendar as calendar,
   mdiFacebook as facebook,
   mdiTwitter as twitter,
+  mdiGithub as github,
 };
