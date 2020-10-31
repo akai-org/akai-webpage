@@ -1,6 +1,9 @@
+const basePath = process.env.BASE_PATH || "";
+
 module.exports = {
   devIndicators: {
     autoPrerender: false,
   },
-  target: "serverless",
+  target: "server",
+  assetPrefix: basePath,
 };
