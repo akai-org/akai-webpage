@@ -5,7 +5,7 @@ export default function Main() {
   return (
     <header className={classes.header}>
       <div className={classes.top}>
-        <img src="/img/logo.svg" />
+        <img src="/img/logo.svg" alt="akai image"/>
       </div>
       <h1 className={classes.title}>
         Akademickie Koło <br />

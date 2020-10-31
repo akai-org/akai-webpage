@@ -33,3 +33,6 @@ yarn-error.log*
 # vercel
 .vercel
 .vscode
+
+public/sw.js*
+public/workbox*

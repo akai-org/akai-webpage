@@ -7,14 +7,17 @@ const socialIcons = [
   {
     url: "https://www.facebook.com/akai.pp",
     icon: facebook,
+    title: "Facebook",
   },
   {
     url: "https://twitter.com/akai_pp",
     icon: twitter,
+    title: "Twitter",
   },
   {
-    url: "https://github.com/akai-org/akai-webpage",
+    url: "https://github.com/akai-org",
     icon: github,
+    title: "Github",
   },
 ];
 
@@ -22,11 +25,11 @@ export default function Footer() {
   return (
     <Section className={styles.section}>
       <div className={styles.copyright}>
-        <h4 className={styles.heading}>AKAI</h4>
+        <h3 className={styles.heading}>AKAI</h3>
         <span>© 2020 Akademickie Koło Aplikacji Internetowych</span>
       </div>
       <div className={styles.contact}>
-        <h4 className={styles.heading}>Kontakt</h4>
+        <h3 className={styles.heading}>Kontakt</h3>
         <a href="mailto:kontakt@akai.org.pl" title="email">
           kontakt@akai.org.pl
         </a>
@@ -34,8 +37,14 @@ export default function Footer() {
       <div className={styles.social}>
         <h2 className={styles.heading}>Znajdź nas</h2>
         <div className={styles.socialIcons}>
-          {socialIcons.map(({ url, icon }) => (
-            <a href={url} target="_blank" rel="noopener" key={url}>
+          {socialIcons.map(({ url, icon ,title}) => (
+            <a
+              href={url}
+              title={title}
+              key={url}
+              target="_blank"
+              rel="noopener"
+            >
               <Icon icon={icon} className={styles.icon} />
             </a>
           ))}
