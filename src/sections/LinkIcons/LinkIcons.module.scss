@@ -1,11 +1,6 @@
 @import "../../styles/vars.scss";
 
 .section {
-  display: flex;
-  justify-content: center;
-}
-
-.container {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -21,6 +16,20 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+
+  &:hover {
+    .icon {
+      fill: $akai-yellow-darkened;
+    }
+
+    .text {
+      color: $heading-color-hover;
+    }
+
+    .description {
+      color: $text-color-hover;
+    }
+  }
 }
 
 .icon {
@@ -28,6 +37,7 @@
   height: 90px;
   margin: 20px 20px 15px;
   fill: $akai-yellow;
+  transition: fill $hoverTransitionDuration ease-in-out;
 }
 
 .text {
@@ -35,6 +45,7 @@
   font-weight: 600;
   color: $heading-color;
   margin-bottom: 10px;
+  transition: color $hoverTransitionDuration ease-in-out;
 }
 
 .description {
@@ -43,10 +54,11 @@
   color: $text-color;
   text-align: center;
   max-width: 200px;
+  transition: color $hoverTransitionDuration ease-in-out;
 }
 
 @media only screen and (min-width: $mobile) {
-  .container {
+  .section {
     flex-direction: row;
     justify-content: space-between;
   }

@@ -1,9 +1,10 @@
 import React from "react";
-import Section from "../components/Section";
 import SEO from "../components/SEO";
-import Title from "../components/Title";
 import Main from "../sections/Main";
-import LinkIcons from "../sections/LinkIcons/LinkIcons";
+import LinkIcons from "../sections/LinkIcons";
+import Footer from "../sections/Footer";
+import Section from "../components/Section";
+import Title from "../components/Title";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <Section>
         <Title>Dołącz do Nas</Title>
       </Section>
-      <Section>Footer</Section>
+      <Footer />
     </main>
   );
 }

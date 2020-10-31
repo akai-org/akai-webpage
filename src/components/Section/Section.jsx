@@ -4,8 +4,10 @@ import styles from "./Section.module.scss";
 
 export default function Section({ children, className }) {
   return (
-    <section className={classnames(styles.section, className)}>
-      {children}
+    <section className={styles.section}>
+      <div className={classnames(styles.contentWrapper, className)}>
+        {children}
+      </div>
     </section>
   );
 }
