@@ -13,7 +13,7 @@ const socialIcons = [
     icon: twitter,
   },
   {
-    url: "https://github.com/akai-org/akai-webpage",
+    url: "https://github.com/akai-org",
     icon: github,
   },
 ];

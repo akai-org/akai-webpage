@@ -1,6 +1,13 @@
-module.exports = {
+const basePath = process.env.BASE_PATH || "";
+
+const withOptimizedImages = require("next-optimized-images");
+
+module.exports = withOptimizedImages({
   devIndicators: {
     autoPrerender: false,
   },
-  target: "serverless",
-};
+  target: "server",
+  basePath,
+  assetPrefix: basePath,
+  dynamicAssetPrefix: true,
+});
