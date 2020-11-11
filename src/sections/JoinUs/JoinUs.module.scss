@@ -1,58 +1,54 @@
 @import "../../styles/vars.scss";
 
 .section {
+  text-align: center;
   p {
     color: $text-color;
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 
-.description {
-  margin: 0 auto 30px;
-  text-align: center;
-  max-width: 500px;
-}
 
 .sectionDetails {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: stretch;
   justify-content: space-around;
   margin: 30px auto;
-  text-align: center;
-}
-
-.sectionColumn {
-  flex: 1;
-  max-width: 500px;
-  margin: 0 15px;
-
-  & + & {
-    padding-top: 20px;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
   }
 }
 
+.sectionColumn {
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex:1
+}
+
 .sectionImage {
+  max-width: 500px;
+  min-width: 300px;
   width: 100%;
   box-shadow: 0 3px 30px -5px rgba(0, 0, 0, 0.75);
 }
 
 .contactWrapper {
-  text-align: center;
   padding: 20px;
 }
 
-@media only screen and (min-width: $tablet) {
+@media screen and (max-width: $tablet) {
   .sectionColumn {
-    & + & {
-      padding-top: 0px;
-    }
+    margin: 0;
   }
-
   .sectionDetails {
-    flex-direction: row;
-
-    &:nth-of-type(even) {
-      flex-direction: row-reverse;
+    flex-direction: column;
+    &:nth-child(even) {
+      flex-direction: column;
     }
   }
 }

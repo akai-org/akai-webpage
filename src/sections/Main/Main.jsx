@@ -1,11 +1,16 @@
 import React from "react";
 import classes from "./Main.module.scss";
-
+import Img from "next/image";
 export default function Main() {
   return (
     <header className={classes.header}>
       <div className={classes.top}>
-        <img src={require("../../assets/img/logo.svg")} />
+        <Img
+          src="/logo.svg"
+          alt="Picture of the author"
+          width={60}
+          height={60}
+        />
       </div>
       <h1 className={classes.title}>
         Akademickie Koło <br />

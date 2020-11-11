@@ -3,32 +3,20 @@ import Section from "../../components/Section";
 import Title from "../../components/Title";
 import Button from "../../components/Button";
 import styles from "./JoinUs.module.scss";
-
+import Img from "next/image";
 const mockDescription =
   "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quod a tempore facere quia earum eaque, ab ipsum, reprehenderit optio necessitatibus commodi iste deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quod a tempore facere quia earum eaque, ab ipsum, reprehenderit optio necessitatibus commodi iste deleniti?";
 
 const sections = [
-  {
-    name: "Front-end development",
-    description: mockDescription,
-    img: require("../../assets/img/section-frontend.jpg"),
-  },
-  {
-    name: "Backend-end development",
-    description: mockDescription,
-    img: require("../../assets/img/section-backend.jpg"),
-  },
-  {
-    name: "Mobile development",
-    description: mockDescription,
-    img: require("../../assets/img/section-mobile.jpg"),
-  },
-  {
-    name: "Graphic design",
-    description: mockDescription,
-    img: require("../../assets/img/section-design.jpg"),
-  },
-];
+  ["Front-end development", "section-frontend.jpg"],
+  ["Backend-end development", "section-backend.jpg"],
+  ["Mobile development", "section-mobile.jpg"],
+  ["Graphic design", "section-design.jpg"],
+].map(([a, b]) => ({
+  name: a,
+  description: mockDescription,
+  img: `/img/${b}`,
+}));
 
 export default function JoinUs() {
   return (
@@ -42,7 +30,15 @@ export default function JoinUs() {
       {sections.map(({ name, description, img }) => (
         <div className={styles.sectionDetails} key={name}>
           <div className={styles.sectionColumn}>
-            <img src={img} className={styles.sectionImage} />
+            <Img
+              src={img}
+              alt={name}
+              className={styles.sectionImage}
+              loading="eager"
+              unsized
+              quality={100}
+              layout="fixed"
+            />
           </div>
           <div className={styles.sectionColumn}>
             <Title>{name}</Title>
