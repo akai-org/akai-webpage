@@ -11,22 +11,22 @@ const sections = [
   {
     name: "Front-end development",
     description: mockDescription,
-    img: require("../../assets/img/section-frontend.jpg"),
+    img: "/img/section-frontend.jpg",
   },
   {
     name: "Backend-end development",
     description: mockDescription,
-    img: require("../../assets/img/section-backend.jpg"),
+    img: "/img/section-backend.jpg",
   },
   {
     name: "Mobile development",
     description: mockDescription,
-    img: require("../../assets/img/section-mobile.jpg"),
+    img: "/img/section-mobile.jpg",
   },
   {
     name: "Graphic design",
     description: mockDescription,
-    img: require("../../assets/img/section-design.jpg"),
+    img: "/img/section-design.jpg",
   },
 ];
 
