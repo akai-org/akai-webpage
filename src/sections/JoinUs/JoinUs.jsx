@@ -4,9 +4,6 @@ import Title from "../../components/Title";
 import Button from "../../components/Button";
 import styles from "./JoinUs.module.scss";
 
-const mockDescription =
-  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quod a tempore facere quia earum eaque, ab ipsum, reprehenderit optio necessitatibus commodi iste deleniti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit odit quod a tempore facere quia earum eaque, ab ipsum, reprehenderit optio necessitatibus commodi iste deleniti?";
-
 const sections = [
   {
     name: "Front-end development",
