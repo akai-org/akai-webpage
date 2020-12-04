@@ -14,13 +14,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   text-align: center;
 }
 
 .sectionColumn {
   flex: 1;
-  max-width: 500px;
   margin: 0 15px;
 
   & + & {
@@ -41,7 +39,7 @@
   }
 
   .sectionDetails {
-    flex-direction: row;
+    flex-direction: row-reverse;
     text-align: initial;
   }
 }
