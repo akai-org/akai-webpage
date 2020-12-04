@@ -10,22 +10,22 @@ const mockDescription =
 const sections = [
   {
     name: "Front-end development",
-    description: mockDescription,
+    description: "Wszystko to, co widzi użytkownik. Interfejs aplikacji. W przypadku aplikacji internetowych powstaje przy pomocy HTML, CSS i JS.",
     img: "/img/section-frontend.jpg",
   },
   {
-    name: "Backend-end development",
-    description: mockDescription,
+    name: "Back-end development",
+    description: "Oprogramowanie uruchamiane po stronie serwera. Przetwarza dane i wykonuje różne operacje. To tutaj dzieje się magia. W kole korzystamy z różnych języków programowania (m. in. Python, Java, PHP, Go, Ruby)",
     img: "/img/section-backend.jpg",
   },
   {
     name: "Mobile development",
-    description: mockDescription,
+    description: "Aplikacje mobilne, zarówno natywne na iOS i Android (Kotlin), jak i przy użyciu Fluttera. Czasami tworzymy też PWA.",
     img: "/img/section-mobile.jpg",
   },
   {
-    name: "Graphic design",
-    description: mockDescription,
+    name: "Graphic design / UI / UX",
+    description: "Zanim coś stworzymy, warto to zaprojektować. No i dobrze, żeby wyglądało przyjemnie dla oka.",
     img: "/img/section-design.jpg",
   },
 ];
@@ -39,10 +39,10 @@ export default function JoinUs() {
         chcesz sprawdzić swoje zdolności do zarządzania i organizacji? Dołącz do
         nas, w każdej z tych ról będziesz mógł się realizować w AKAI.
       </p>
-      {sections.map(({ name, description, img }) => (
+      {sections.map(({name, description, img}) => (
         <div className={styles.sectionDetails} key={name}>
           <div className={styles.sectionColumn}>
-            <img src={img} className={styles.sectionImage} />
+            <img src={img} className={styles.sectionImage}/>
           </div>
           <div className={styles.sectionColumn}>
             <Title alignment="left">{name}</Title>
