@@ -23,12 +23,13 @@ export default function Footer() {
     <Section className={styles.section}>
       <div className={styles.copyright}>
         <h4 className={styles.heading}>AKAI</h4>
-        <span>© 2020 Akademickie Koło Aplikacji Internetowych</span>
+        <p>© 2020 Akademickie Koło Aplikacji Internetowych</p>
       </div>
       <div className={styles.contact}>
         <h4 className={styles.heading}>Kontakt</h4>
+
         <a href="mailto:kontakt@akai.org.pl" title="email">
-          kontakt@akai.org.pl
+          <p>kontakt@akai.org.pl</p>
         </a>
       </div>
       <div className={styles.social}>
