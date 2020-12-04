@@ -6,18 +6,15 @@
   }
 }
 
-.description {
-  margin: 0 auto 30px;
-  text-align: center;
-  max-width: 500px;
+.title {
+  margin: 15px;
 }
 
 .sectionDetails {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
-  margin: 30px auto;
+  align-items: center;
   text-align: center;
 }
 
@@ -27,18 +24,13 @@
   margin: 0 15px;
 
   & + & {
-    padding-top: 20px;
+    padding-top: 35px;
   }
 }
 
 .sectionImage {
   width: 100%;
   box-shadow: 0 3px 30px -5px rgba(0, 0, 0, 0.75);
-}
-
-.contactWrapper {
-  text-align: center;
-  padding: 20px;
 }
 
 @media only screen and (min-width: $tablet) {
@@ -51,9 +43,5 @@
   .sectionDetails {
     flex-direction: row;
     text-align: initial;
-
-    &:nth-of-type(even) {
-      flex-direction: row-reverse;
-    }
   }
 }

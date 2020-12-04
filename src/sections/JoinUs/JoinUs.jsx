@@ -45,7 +45,7 @@ export default function JoinUs() {
             <img src={img} className={styles.sectionImage} />
           </div>
           <div className={styles.sectionColumn}>
-            <Title>{name}</Title>
+            <Title alignment="left">{name}</Title>
             <p>{description}</p>
           </div>
         </div>

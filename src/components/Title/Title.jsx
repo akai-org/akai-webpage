@@ -7,9 +7,9 @@ const alignments = {
   left: styles.left,
 };
 
-export default function Title({ children, alignment = "center" }) {
+export default function Title({ children, className, alignment = "center" }) {
   return (
-    <h2 className={classnames(styles.title, alignments[alignment])}>
+    <h2 className={classnames(styles.title, alignments[alignment], className)}>
       {children}
     </h2>
   );

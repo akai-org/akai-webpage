@@ -22,9 +22,15 @@
 }
 
 .left {
-  text-align: left;
+  @extend .center;
+}
 
-  &::after {
-    margin: 15px 0 25px;
+@media only screen and (min-width: $tablet) {
+  .left {
+    text-align: left;
+
+    &::after {
+      margin: 15px 0 25px;
+    }
   }
 }
