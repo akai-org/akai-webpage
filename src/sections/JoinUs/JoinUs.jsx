@@ -10,22 +10,26 @@ const mockDescription =
 const sections = [
   {
     name: "Front-end development",
-    description: "Wszystko to, co widzi użytkownik. Interfejs aplikacji. W przypadku aplikacji internetowych powstaje przy pomocy HTML, CSS i JS.",
+    description:
+      "Wszystko to, co widzi użytkownik. Odpowiada za wygląd i zachowanie strony lub aplikacji internetowej. Powstaje przy pomocy HTML, CSS i JavaScript, ale w dzisiejszych czasach często nie jest to wystarczające. Dlatego często korzystamy z różnych frameworków jak React, Vue, Next.js i Gatsby.",
     img: "/img/section-frontend.jpg",
   },
   {
     name: "Back-end development",
-    description: "Oprogramowanie uruchamiane po stronie serwera. Przetwarza dane i wykonuje różne operacje. To tutaj dzieje się magia. W kole korzystamy z różnych języków programowania (m. in. Python, Java, PHP, Go, Ruby)",
+    description:
+      "Oprogramowanie uruchamiane po stronie serwera. Przetwarza dane i wykonuje różne operacje. To tutaj dzieje się magia. W kole korzystamy z różnych języków programowania (m. in. Python, Java, PHP, Go, Ruby)",
     img: "/img/section-backend.jpg",
   },
   {
     name: "Mobile development",
-    description: "Aplikacje mobilne, zarówno natywne na iOS i Android (Kotlin), jak i przy użyciu Fluttera. Czasami tworzymy też PWA.",
+    description:
+      "Aplikacje mobilne, zarówno natywne na iOS i Android (Kotlin), jak i przy użyciu Fluttera. Czasami tworzymy też PWA.",
     img: "/img/section-mobile.jpg",
   },
   {
     name: "Graphic design / UI / UX",
-    description: "Zanim coś stworzymy, warto to zaprojektować. No i dobrze, żeby wyglądało przyjemnie dla oka.",
+    description:
+      "Zanim coś stworzymy, warto to zaprojektować. No i dobrze, żeby wyglądało przyjemnie dla oka.",
     img: "/img/section-design.jpg",
   },
 ];
@@ -39,10 +43,10 @@ export default function JoinUs() {
         chcesz sprawdzić swoje zdolności do zarządzania i organizacji? Dołącz do
         nas, w każdej z tych ról będziesz mógł się realizować w AKAI.
       </p>
-      {sections.map(({name, description, img}) => (
+      {sections.map(({ name, description, img }) => (
         <div className={styles.sectionDetails} key={name}>
           <div className={styles.sectionColumn}>
-            <img src={img} className={styles.sectionImage}/>
+            <img src={img} className={styles.sectionImage} />
           </div>
           <div className={styles.sectionColumn}>
             <Title alignment="left">{name}</Title>
