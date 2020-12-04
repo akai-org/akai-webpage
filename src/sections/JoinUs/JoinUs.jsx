@@ -20,7 +20,7 @@ const sections = [
   {
     name: "Mobile development",
     description:
-      "Aplikacje mobilne, zarówno natywne na iOS i Android (Kotlin), jak i przy użyciu Fluttera. Czasami tworzymy też PWA.",
+      "Świat aplikacji mobilnych, dostępnych na wyciągnięcie ręki, na urządzeniach z systemami iOS i Android. Aplikacje piszemy najczęściej natywnie dla Android'a w języku Kotlin lub multiplatform przy użyciu Flutter'a. W ramach sekcji mobile tworzymy także czasem PWA.",
     img: "/img/section-mobile.jpg",
   },
   {
