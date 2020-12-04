@@ -6,9 +6,14 @@ import styles from "./About.module.scss";
 export default function About() {
   return (
     <Section className={styles.section}>
+      <Title alignment="left" className={styles.title}>
+        O AKAI
+      </Title>
       <div className={styles.sectionDetails}>
         <div className={styles.sectionColumn}>
-          <Title alignment="left">O AKAI</Title>
+          <img src="/img/section-design.jpg" className={styles.sectionImage} />
+        </div>
+        <div className={styles.sectionColumn}>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             repellendus laudantium earum rem repellat, quia atque quod
@@ -24,9 +29,6 @@ export default function About() {
             dolore at aliquam accusantium exercitationem ex sed repellendus
             quibusdam aperiam soluta commodi magnam!
           </p>
-        </div>
-        <div className={styles.sectionColumn}>
-          <img src="/img/section-design.jpg" className={styles.sectionImage} />
         </div>
       </div>
     </Section>
