@@ -17,5 +17,5 @@ jobs:
           BASE_BRANCH: master
           BRANCH: gh-pages
           FOLDER: build
-          CNAME: webpage.akai.org.pl
+          CNAME: akai.org.pl
           BUILD_SCRIPT: npm install && npm run-script build && npm run-script export
