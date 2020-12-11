@@ -26,7 +26,7 @@ const sections = [
   {
     name: "Graphic design / UI / UX",
     description:
-      "Zanim coś stworzymy, warto to zaprojektować. No i dobrze, żeby wyglądało przyjemnie dla oka.",
+      "Zanim coś stworzymy, warto to zaprojektować. Oprócz tego, żeby było przyjemne dla oka - warto również zadbać o to, aby interfejs był intuicyjny dla użytkownika.",
     img: "/img/section-design.jpg",
   },
 ];
