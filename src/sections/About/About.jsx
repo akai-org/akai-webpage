@@ -11,23 +11,31 @@ export default function About() {
       </Title>
       <div className={styles.sectionDetails}>
         <div className={styles.sectionColumn}>
-          <img src="/img/section-design.jpg" className={styles.sectionImage} />
+          <img src="/img/akai.jpg" className={styles.sectionImage} />
         </div>
         <div className={styles.sectionColumn}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            repellendus laudantium earum rem repellat, quia atque quod
-            consectetur praesentium, harum accusamus voluptates dolore,
-            distinctio corporis nemo? Architecto modi suscipit rem facilis
-            tenetur id. Maxime incidunt, laborum tempore dolore at aliquam
-            accusantium exercitationem ex sed repellendus quibusdam aperiam
-            soluta commodi magnam! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Aspernatur repellendus laudantium earum rem
-            repellat, quia atque quod consectetur praesentium, harum accusamus
-            voluptates dolore, distinctio corporis nemo? Architecto modi
-            suscipit rem facilis tenetur id. Maxime incidunt, laborum tempore
-            dolore at aliquam accusantium exercitationem ex sed repellendus
-            quibusdam aperiam soluta commodi magnam!
+            <span className={styles.highlight}>
+              Akademickie Koło Aplikacji Internetowych
+            </span>{" "}
+            rozpoczęło swoją działalność na Wydziale Informatyki Politechniki
+            Poznańskiej w 2010 roku. Naszym członkiem może być każdy student,
+            niezależnie na jakiej uczelni studiuje. Skupiamy młodych i ambitnych
+            ludzi, którzy jako cel stawiają sobie rozwój i osiągnięcie sukcesu w
+            dziedzinie aplikacji internetowych. Zależy nam na promowaniu idei
+            sieci budowanej przez profesjonalistów, którzy znają wartość swojej
+            wiedzy i są zawsze głodni nowych umiejętności i doświadczenia.
+          </p>
+          <p>
+            Liczymy, że realizacje w sektorze prywatnym oraz publicznym, dadzą
+            członkom <span className={styles.highlight}>AKAI</span> szansę na
+            budowanie profesjonalizmu i zdobycie tak ważnego doświadczenia dla
+            obecnej i przyszłej działalności. Staramy się nawiązywać współpracę
+            z placówkami naukowymi, przedstawicielami firm oraz znanymi
+            specjalistami ze świata IT. Jesteśmy gotowi podejmować kolejne
+            wyzwania i pokazywać, że wiedza i doświadczenie przekazywane przez
+            naszą organizacja stanowi przyszłość projektowania aplikacji
+            internetowych.
           </p>
         </div>
       </div>
