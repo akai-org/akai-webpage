@@ -18,5 +18,7 @@ module.exports = {
     "internetowych",
   ],
   preconnect: ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
-  fonts: ["https://fonts.googleapis.com/css?family=Quicksand:400,600,700"],
+  fonts: [
+    "https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap",
+  ],
 };

@@ -3,7 +3,7 @@ import Section from "../../components/Section";
 import Title from "../../components/Title";
 import Button from "../../components/Button";
 import styles from "./JoinUs.module.scss";
-
+import Email from "../../components/Email";
 const sections = [
   {
     name: "Front-end development",
@@ -43,7 +43,7 @@ export default function JoinUs() {
       {sections.map(({ name, description, img }) => (
         <div className={styles.sectionDetails} key={name}>
           <div className={styles.sectionColumn}>
-            <img src={img} className={styles.sectionImage} />
+            <img src={img} className={styles.sectionImage} alt={name}/>
           </div>
           <div className={styles.sectionColumn}>
             <Title alignment="left">{name}</Title>
@@ -53,9 +53,9 @@ export default function JoinUs() {
       ))}
       <div className={styles.contactWrapper}>
         <Title>Chcesz do nas dołączyć?</Title>
-        <a href="mailto:kontakt@akai.org.pl" title="email">
+        <Email>
           <Button>Skontaktuj się z nami!</Button>
-        </a>
+        </Email>
       </div>
     </Section>
   );
