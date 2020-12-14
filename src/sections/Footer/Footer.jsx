@@ -2,7 +2,6 @@ import React from "react";
 import Section from "../../components/Section";
 import Icon, { facebook, twitter, github } from "../../components/Icon";
 import styles from "./Footer.module.scss";
-import Email from "../../components/Email";
 const socialIcons = [
   {
     url: "https://www.facebook.com/akai.pp",
@@ -30,11 +29,9 @@ export default function Footer() {
       </div>
       <div className={styles.contact}>
         <h2 className={styles.heading}>Kontakt</h2>
-        <Email>
-          <p
-            dangerouslySetInnerHTML={{ __html: `kontakt&#64;akai.org.pl` }}
-          />
-        </Email>
+        <a href="mailto:kontakt@akai.org.pl" title="email">
+          <p>kontakt@akai.org.pl</p>
+        </a>
       </div>
       <div className={styles.social}>
         <h2 className={styles.heading}>Znajdź nas</h2>
@@ -45,7 +42,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               key={url}
-              titile={title}
+              title={title}
             >
               <Icon icon={icon} className={styles.icon} />
             </a>
