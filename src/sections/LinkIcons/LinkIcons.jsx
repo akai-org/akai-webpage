@@ -55,8 +55,9 @@ function LinkIcon({ name, description, url, icon }) {
       href={url}
       className={styles.iconLink}
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
       key={name}
+      title={name}
     >
       <Icon icon={icon} className={styles.icon} />
       <span className={styles.text}>{name}</span>

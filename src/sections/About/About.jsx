@@ -11,7 +11,7 @@ export default function About() {
       </Title>
       <div className={styles.sectionDetails}>
         <div className={styles.sectionColumn}>
-          <img src="/img/akai.jpg" className={styles.sectionImage} />
+          <img src="/img/akai.jpg" className={styles.sectionImage} alt="Grupowe zdjęcie AKAI"/>
         </div>
         <div className={styles.sectionColumn}>
           <p>

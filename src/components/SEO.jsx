@@ -24,9 +24,9 @@ const SEO = () => {
       <meta name="keywords" content={meta.keywords.join(",")} />
       <meta name="theme-color" content="#f9a11b" />
       <link rel="image_src" href={meta.img} />
-      <link rel="shortcut icon" href="/favicon.svg" />
-      <link rel="icon" href="/favicon.svg" />
-      <link rel="apple-touch-icon" href="/favicon.svg" />
+      <link rel="shortcut icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel="apple-touch-icon" href="/favicon.ico" />
       <link rel="robots" href="/robots.txt" />
       <link rel="manifest" href="/manifest.json" />
       <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
@@ -35,10 +35,10 @@ const SEO = () => {
         <link key={v} rel="preconnect dns-prefetch" href={v} />
       ))}
       {meta.fonts.map((v) => (
-        <link key={v + "-pre"} rel="preload" as="style" href={v} />
-      ))}
-      {meta.fonts.map((v) => (
-        <link key={v} rel="stylesheet" href={v} />
+        <React.Fragment key={v}>
+          <link rel="preload" as="style" href={v} />
+          <link rel="stylesheet" href={v} />
+        </React.Fragment>
       ))}
     </Head>
   );
