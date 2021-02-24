@@ -25,7 +25,7 @@ export default function Footer() {
     <Section className={styles.section}>
       <div className={styles.copyright}>
         <h2 className={styles.heading}>AKAI</h2>
-        <p>© 2020 Akademickie Koło Aplikacji Internetowych</p>
+        <p>© 2021 Akademickie Koło Aplikacji Internetowych</p>
       </div>
       <div className={styles.contact}>
         <h2 className={styles.heading}>Kontakt</h2>
