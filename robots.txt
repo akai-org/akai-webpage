@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akai.org.pl/sitemap.xml
