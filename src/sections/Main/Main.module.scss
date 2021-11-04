@@ -5,7 +5,7 @@
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  background-image: url("/img/background.png");
+  background: #1e2633 url("/img/background.jpg");
   background-size: cover;
   color: $akai-white;
   text-align: center;
@@ -17,8 +17,8 @@
   max-width: 1100px;
   display: flex;
   align-items: flex-start;
-  img {	
-    width: 40px;	
+  img {
+    width: 40px;
   }
 }
 
