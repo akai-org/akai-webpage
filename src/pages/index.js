@@ -5,6 +5,7 @@ import About from "../sections/About";
 import LinkIcons from "../sections/LinkIcons";
 import JoinUs from "../sections/JoinUs";
 import Footer from "../sections/Footer";
+import Partners from '../sections/Partners/Partners';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <LinkIcons />
       <JoinUs />
+      <Partners />
       <Footer />
     </main>
   );
