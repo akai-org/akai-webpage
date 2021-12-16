@@ -40,8 +40,9 @@
 }
 
 .iconWrapper {
-  border-radius: 50%;
+  padding: 7px;
   border: 1px solid $text-color;
+  border-radius: 50%;
   fill: $text-color;
   transition: fill $hoverTransitionDuration ease-in-out,
     border-color $hoverTransitionDuration ease-in-out;
@@ -53,11 +54,10 @@
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 24px;
   display: flex;
   fill: inherit;
-  padding: 7px;
 }
 
 @media only screen and (min-width: $tablet) {
