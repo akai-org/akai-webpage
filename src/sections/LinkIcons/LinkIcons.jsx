@@ -3,10 +3,10 @@ import Section from "../../components/Section";
 import Icon, {
   blog,
   apps,
-  // calendar,
   facebook,
   twitter,
   github,
+  linkedin,
 } from "../../components/Icon";
 import styles from "./LinkIcons.module.scss";
 
@@ -26,6 +26,11 @@ const socialLinksConfig = [
     url: "https://twitter.com/akai_pp",
     icon: twitter,
   },
+  {
+    name: "LinkedIn",
+    url: "https://linkedin.com/company/akai-pp/",
+    icon: linkedin,
+  },
 ];
 
 const linksConfig = [
@@ -41,12 +46,6 @@ const linksConfig = [
     url: "https://apps.akai.org.pl/",
     icon: apps,
   },
-  // {
-  //   name: "Kalendarz",
-  //   description: "Obserwuj nasze spotkania i wydarzenia!",
-  //   url: "#",
-  //   icon: calendar,
-  // },
 ];
 
 function LinkIcon({ name, description, url, icon }) {
@@ -73,8 +72,6 @@ export default function LinkIcons() {
         {socialLinksConfig.map((props) => (
           <LinkIcon {...props} key={props.name} />
         ))}
-      </div>
-      <div className={styles.iconsWrapper}>
         {linksConfig.map((props) => (
           <LinkIcon {...props} key={props.name} />
         ))}
