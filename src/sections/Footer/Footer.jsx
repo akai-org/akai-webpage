@@ -1,6 +1,11 @@
 import React from "react";
 import Section from "../../components/Section";
-import Icon, { facebook, twitter, github } from "../../components/Icon";
+import Icon, {
+  facebook,
+  twitter,
+  github,
+  linkedin,
+} from "../../components/Icon";
 import styles from "./Footer.module.scss";
 const socialIcons = [
   {
@@ -17,6 +22,11 @@ const socialIcons = [
     url: "https://github.com/akai-org",
     icon: github,
     title: "Github",
+  },
+  {
+    url: "https://linkedin.com/company/akai-pp/",
+    icon: linkedin,
+    title: "Linkedin",
   },
 ];
 
