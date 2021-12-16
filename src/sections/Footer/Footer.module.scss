@@ -39,16 +39,10 @@
   }
 }
 
-.icon {
-  width: 40px;
-  height: 40px;
+.iconWrapper {
   border-radius: 50%;
   border: 1px solid $text-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   fill: $text-color;
-  padding: 7px;
   transition: fill $hoverTransitionDuration ease-in-out,
     border-color $hoverTransitionDuration ease-in-out;
 
@@ -56,6 +50,14 @@
     fill: $text-color-hover;
     border-color: $text-color-hover;
   }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  fill: inherit;
+  padding: 7px;
 }
 
 @media only screen and (min-width: $tablet) {

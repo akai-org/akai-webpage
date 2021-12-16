@@ -56,6 +56,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               key={url}
               title={title}
+              className={styles.iconWrapper}
             >
               <Icon icon={icon} className={styles.icon} />
             </a>
