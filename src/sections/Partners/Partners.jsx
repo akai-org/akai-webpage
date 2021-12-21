@@ -1,36 +1,18 @@
 import React from "react";
 import Section from "../../components/Section";
 import Title from '../../components/Title/Title';
-import Icon, {
-  apps
-} from "../../components/Icon";
 import styles from "./Partners.module.scss";
 
 const partnersLinksConfig = [
   {
-    name: "Logobrand",
-    url: "#",
-    icon: apps,
+    name: "F-Secure",
+    url: "https://www.f-secure.com/pl",
+    icon: "F-Secure.png",
   },
   {
-    name: "Logobrand",
-    url: "#",
-    icon: apps,
-  },
-  {
-    name: "Logobrand",
-    url: "#",
-    icon: apps,
-  },
-  {
-    name: "Logobrand",
-    url: "#",
-    icon: apps,
-  },
-  {
-    name: "Logobrand",
-    url: "#",
-    icon: apps,
+    name: "AppUnite",
+    url: "https://appunite.com/",
+    icon: "AppUnite.png",
   }
 ];
 
@@ -44,8 +26,7 @@ function PartnerLink({ name, url, icon }) {
       key={name}
       title={name}
     >
-      <Icon icon={icon} className={styles.partnerIcon} />
-      <span className={styles.text}>{name}</span>
+      <img src={'/img/partners/'+icon} alt={'Logo '+name} className={styles.partnerIcon} />
     </a>
   );
 }
