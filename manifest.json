@@ -1,0 +1,23 @@
+{
+  "title": "AKAI",
+  "short_name": "AKAI",
+  "name": "AKAI",
+  "description": "AKAI Homepage",
+  "start_url": "/",
+  "background_color": "#f9a11b",
+  "theme_color": "#f9a11b",
+  "display": "standalone",
+  "manifest_version": 1,
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg"
+    },
+    {
+      "src": "/img/logo.png",
+      "sizes": "512x512 192x192",
+      "type": "image/png"
+    }
+  ]
+}
