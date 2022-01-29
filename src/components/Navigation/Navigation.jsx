@@ -38,7 +38,7 @@ export default function Navigation() {
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
     const sectionObserver = new IntersectionObserver(
-      function (entries) {
+      (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) {
             return;
