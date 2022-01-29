@@ -49,7 +49,7 @@ export default function Navigation() {
         });
       },
       {
-        rootMargin: "-300px",
+        rootMargin: "-600px 0px -200px 0px",
       }
     );
     sections.forEach((section) => sectionObserver.observe(section));
