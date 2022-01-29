@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import classnames from "classnames";
 import throttle from "lodash.throttle";
 import styles from "./Navigation.module.scss";
@@ -27,6 +27,14 @@ export default function Navigation() {
   const [active, setActive] = useState(undefined);
   const [solidNavbar, setSolidNavbar] = useState(false);
 
+  const checkboxRef = useRef();
+
+  function deselectNavigation() {
+    if (checkboxRef?.current) {
+      checkboxRef.current.checked = false;
+    }
+  }
+
   useEffect(() => {
     const sections = document.querySelectorAll(".section");
     const sectionObserver = new IntersectionObserver(
@@ -41,8 +49,8 @@ export default function Navigation() {
         });
       },
       {
-        threshold: 0.15,
-        rootMargin: "-150px",
+        threshold: 0.05,
+        rootMargin: "-200px",
       }
     );
     sections.forEach((section) => sectionObserver.observe(section));
@@ -75,20 +83,32 @@ export default function Navigation() {
           <Image src="/img/logo.svg" alt="logo" width={40} height={40} />
         </a>
       </div>
-      <ul className={styles.links}>
-        {sections.map(({ name, url }) => (
-          <li key={url}>
-            <a
-              href={url}
-              className={classnames(styles.link, {
-                [styles.link__active]: url === `#${active}`,
-              })}
-            >
-              {name}
-            </a>
-          </li>
-        ))}
-      </ul>
+      <input
+        ref={checkboxRef}
+        id="nav-toggle"
+        type="checkbox"
+        className={styles.hamburger}
+      />
+      <div className={styles.linksWrapper}>
+        <ul className={styles.links}>
+          {sections.map(({ name, url }) => (
+            <li key={url}>
+              <a
+                href={url}
+                className={classnames(styles.link, {
+                  [styles.link__active]: url === `#${active}`,
+                })}
+                onClick={deselectNavigation}
+              >
+                {name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <label htmlFor="nav-toggle" className={styles.hamburgerTrigger}>
+        <span></span>
+      </label>
     </nav>
   );
 }
