@@ -1,0 +1,44 @@
+@import "../../styles/vars.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: $navbarHeight;
+  padding: 12px;
+  transition: 0.25s background ease-in-out;
+
+  &__solid {
+    background: #1e2633;
+  }
+}
+
+.links {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+  font-size: 15px;
+
+  a {
+    color: $akai-white;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  position: absolute;
+  padding: 12px;
+  top: 0;
+  left: 0;
+}
+
+.link {
+  opacity: 0.6;
+  transition: 0.25s opacity ease-in-out;
+
+  &__active {
+    opacity: 1;
+  }
+}

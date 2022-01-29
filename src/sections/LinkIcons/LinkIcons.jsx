@@ -8,6 +8,7 @@ import Icon, {
   github,
   linkedin,
 } from "../../components/Icon";
+import Title from "../../components/Title";
 import styles from "./LinkIcons.module.scss";
 
 const socialLinksConfig = [
@@ -15,11 +16,6 @@ const socialLinksConfig = [
     name: "Facebook",
     url: "https://www.facebook.com/akai.pp",
     icon: facebook,
-  },
-  {
-    name: "Github",
-    url: "https://github.com/akai-org",
-    icon: github,
   },
   {
     name: "Twitter",
@@ -30,6 +26,11 @@ const socialLinksConfig = [
     name: "LinkedIn",
     url: "https://linkedin.com/company/akai-pp/",
     icon: linkedin,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/akai-org",
+    icon: github,
   },
 ];
 
@@ -67,7 +68,8 @@ function LinkIcon({ name, description, url, icon }) {
 
 export default function LinkIcons() {
   return (
-    <Section className={styles.section}>
+    <Section className={styles.section} id="obserwuj-nas">
+      <Title>Obserwuj nas</Title>
       <div className={styles.iconsWrapper}>
         {socialLinksConfig.map((props) => (
           <LinkIcon {...props} key={props.name} />
