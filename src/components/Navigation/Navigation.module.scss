@@ -101,17 +101,17 @@
   }
 }
 
-.hamburger:checked ~ .linksWrapper {
-  transform: scale(1);
-}
+.hamburger:checked {
+  & ~ .linksWrapper {
+    transform: scale(1);
 
-.hamburger:checked ~ .linksWrapper .links {
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out 0.25s;
-}
+    & .links {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out 0.25s;
+    }
+  }
 
-.hamburger:checked ~ .hamburgerTrigger {
-  span {
+  & ~ .hamburgerTrigger span {
     background: transparent;
     @extend %hamburgerTriggerBarChecked;
 

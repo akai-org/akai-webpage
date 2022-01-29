@@ -49,8 +49,7 @@ export default function Navigation() {
         });
       },
       {
-        threshold: 0.05,
-        rootMargin: "-200px",
+        rootMargin: "-300px",
       }
     );
     sections.forEach((section) => sectionObserver.observe(section));
