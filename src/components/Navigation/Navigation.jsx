@@ -39,17 +39,47 @@ export default function Navigation() {
     const sections = document.querySelectorAll(".section");
     const sectionObserver = new IntersectionObserver(
       (entries) => {
+        // DEBUG
+        // console.log("---");
+
+        // Intersection Observer is triggered initially on load with all registered sections
+        // described case is detected here, preventing from evaluating the section to highlight
+        if (entries.length === sections.length) {
+          return;
+        }
+
         entries.forEach((entry) => {
+          // DEBUG
+          // console.log({
+          //   id: entry.target.id,
+          //   intersectionRatio: entry.intersectionRatio,
+          //   isIntersecting: entry.isIntersecting,
+          // });
+          const { id } = entry.target;
+
           if (!entry.isIntersecting) {
+            // DEBUG
+            // console.log("leaving", { id: entry.target.id });
+
+            // Handling the special case here due to the fact that the "dolacz-do-nas" section is pretty large
+            // while the "partnerzy" is small and placed pretty low, which makes it difficult to detect when user
+            // is reentering "dolacz-do-nas" section.
+            // Fine-tuning the Intersection Observer options makes it difficult to detect other sections ("o-akai"
+            // and "obserwuj-nas") properly.
+            if (id === "partnerzy") {
+              setActive("dolacz-do-nas");
+            }
             return;
           }
 
-          const { id } = entry.target;
           setActive(id);
         });
+        // DEBUG
+        // console.log("---");
       },
       {
-        rootMargin: "-600px 0px -200px 0px",
+        threshold: 0.05,
+        rootMargin: "-35% 0px -35%",
       }
     );
     sections.forEach((section) => sectionObserver.observe(section));

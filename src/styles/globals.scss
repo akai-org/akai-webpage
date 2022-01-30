@@ -22,3 +22,15 @@ p {
   font-size: 15px;
   color: $text-color;
 }
+
+// DEBUG Intersection Observer
+// body::after {
+//   content: "";
+//   width: 100vw;
+//   background: red;
+//   opacity: 30%;
+//   position: fixed;
+//   z-index: 999;
+//   top: 35%;
+//   height: 30vh;
+// }
