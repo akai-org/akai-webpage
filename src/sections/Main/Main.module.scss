@@ -3,6 +3,7 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   height: 100vh;
   background: #1e2633 url("/img/background.jpg");
@@ -23,7 +24,6 @@
 }
 
 .title {
-  margin: 12vh 20px 0;
   font-size: 48px;
 
   &::after {
@@ -41,10 +41,4 @@
   line-height: 2;
   margin: 0 20px;
   color: $akai-white;
-}
-
-@media only screen and (min-width: $mobile) {
-  .title {
-    margin-top: 20vh;
-  }
 }

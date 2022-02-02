@@ -32,8 +32,8 @@ const sections = [
 
 export default function JoinUs() {
   return (
-    <Section className={styles.section}>
-      <Title>Dołącz do Nas</Title>
+    <Section className={styles.section} id="dolacz-do-nas">
+      <Title>Dołącz do nas</Title>
       <p className={styles.description}>
         Interesujesz się back-endem, front-endem, masz wyczucie designu czy może
         chcesz sprawdzić swoje zdolności do zarządzania i organizacji? Dołącz do

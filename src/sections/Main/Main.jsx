@@ -1,12 +1,10 @@
 import React from "react";
+import classnames from "classnames";
 import classes from "./Main.module.scss";
 
 export default function Main() {
   return (
-    <header className={classes.header}>
-      <div className={classes.top}>
-        <img src="/img/logo.svg" width="40" height="40" alt="logo" />
-      </div>
+    <header className={classnames(classes.header, "section")} id="main">
       <h1 className={classes.title}>
         Akademickie Koło <br />
         Aplikacji Internetowych

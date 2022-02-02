@@ -37,7 +37,7 @@ function PartnerLink({ name, url, icon }) {
 
 export default function Partners() {
   return (
-    <Section className={styles.section}>
+    <Section className={styles.section} id="partnerzy">
       <Title>Partnerzy</Title>
       <div className={styles.partnersIconsWrapper}>
         {partnersLinksConfig.map((props) => (

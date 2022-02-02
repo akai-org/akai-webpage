@@ -5,13 +5,17 @@ import styles from "./About.module.scss";
 
 export default function About() {
   return (
-    <Section className={styles.section}>
+    <Section className={styles.section} id="o-akai">
       <Title alignment="left" className={styles.title}>
         O AKAI
       </Title>
       <div className={styles.sectionDetails}>
         <div className={styles.sectionColumn}>
-          <img src="/img/akai.jpg" className={styles.sectionImage} alt="Grupowe zdjęcie AKAI"/>
+          <img
+            src="/img/akai.jpg"
+            className={styles.sectionImage}
+            alt="Grupowe zdjęcie AKAI"
+          />
         </div>
         <div className={styles.sectionColumn}>
           <p>

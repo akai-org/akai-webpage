@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+html {
+  scroll-padding-top: $navbarHeight;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 13px;
