@@ -8,12 +8,7 @@ const partnersLinksConfig = [
     name: "AppUnite",
     url: "https://appunite.com/",
     icon: "AppUnite.png",
-  },
-  {
-    name: "F-Secure",
-    url: "https://www.f-secure.com/pl",
-    icon: "F-Secure.png",
-  },
+  }
 ];
 
 function PartnerLink({ name, url, icon }) {
