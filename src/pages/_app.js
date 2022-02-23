@@ -1,5 +1,6 @@
+import Navigation from "@/components/ui/Navigation/Navigation";
 import React from "react";
-import Navigation from "../components/Navigation/Navigation";
+
 import "../styles/globals.scss";
 
 const MyApp = ({ Component, pageProps }) => {

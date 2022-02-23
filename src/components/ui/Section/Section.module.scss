@@ -1,0 +1,18 @@
+@import "../../../styles/vars";
+
+.section {
+  &:nth-child(2n) {
+    background-color: $akai-white;
+  }
+
+  &:nth-child(2n + 1) {
+    background-color: $bg-color;
+  }
+
+  padding: 30px;
+}
+
+.contentWrapper {
+  max-width: 1100px;
+  margin: auto;
+}

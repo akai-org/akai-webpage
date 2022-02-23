@@ -1,0 +1,44 @@
+@import "../../../styles/vars.scss";
+
+.title {
+  margin: 15px;
+}
+
+.sectionDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.sectionColumn {
+  flex: 1;
+
+  & + & {
+    padding-top: 25px;
+  }
+}
+
+.sectionImage {
+  width: 100%;
+  box-shadow: 0 3px 30px -5px rgba(0, 0, 0, 0.75);
+}
+
+.highlight {
+  font-weight: 600;
+}
+
+@media only screen and (min-width: $tablet) {
+  .sectionColumn {
+    margin: 0 15px;
+
+    & + & {
+      padding-top: 0px;
+    }
+  }
+
+  .sectionDetails {
+    flex-direction: row-reverse;
+    text-align: initial;
+  }
+}
