@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   height: 100vh;
-  background: #1e2633 url("/img/background.jpg");
+  background: var(--navbar-color) url("/img/background.jpg");
   background-size: cover;
   color: var(--text-light);
   text-align: center;
