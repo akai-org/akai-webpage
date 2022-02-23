@@ -1,12 +1,31 @@
-@import "vars";
-
 :root {
-  --font-size-text: 15px;
-  --font-size-heading: 25px;
-
-  --white: #fff;
   --akai-orange: #f7a823;
   --akai-orange-darker: #f78923;
+  --akai-navy: #141f35;
+
+  --font-size-text: 15px;
+  --font-size-heading: 25px;
+  --font-weight-bold: 600;
+
+  --text-light: #fff;
+  --text-black: #333;
+  --text-black-darker: #000;
+  --text-gray: #666;
+  --text-gray-darker: #333333;
+
+  --section-background: #fff;
+  --section-background-alt: #f5f5f5;
+
+  --navbar-height: 67px;
+  --navbar-color: #1e2633;
+  --navbar-hamburger-color: #a5a8ad;
+
+  --hover-transition-duration: 0.25s;
+
+  // --mobile-breakpoint: 480px;
+  // --tablet-breakpoint: 768px;
+  // --desktop-breakpoint: 992px;
+  // --large-desktop-breakpoint: 1200px;
 }
 
 * {
@@ -16,7 +35,7 @@
 }
 
 html {
-  scroll-padding-top: $navbarHeight;
+  scroll-padding-top: var(--navbar-height);
   scroll-behavior: smooth;
 }
 
@@ -29,5 +48,5 @@ body {
 p {
   line-height: 1.8;
   font-size: var(--font-size-text);
-  color: $text-color;
+  color: var(--text-gray);
 }

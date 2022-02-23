@@ -1,6 +1,5 @@
-@import "../../../styles/vars.scss";
-
 .title {
+  color: var(--text-black);
   font-size: var(--font-size-heading);
   margin: 15px 0;
 
@@ -25,7 +24,7 @@
   @extend .center;
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: 768px) {
   .left {
     text-align: left;
 

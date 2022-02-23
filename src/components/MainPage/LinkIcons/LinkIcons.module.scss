@@ -1,5 +1,3 @@
-@import "../../../styles/vars.scss";
-
 .section {
   flex: 1;
   display: flex;
@@ -32,11 +30,11 @@
     }
 
     .text {
-      color: $heading-color-hover;
+      color: var(--text-black-darker);
     }
 
     .description {
-      color: $text-color-hover;
+      color: var(--text-gray-darker);
     }
   }
 }
@@ -46,27 +44,26 @@
   height: 90px;
   margin: 20px 20px 15px;
   fill: var(--akai-orange);
-  transition: fill $hoverTransitionDuration ease-in-out;
+  transition: fill var(--hover-transition-duration) ease-in-out;
 }
 
 .text {
   font-size: var(--font-size-heading);
-  font-weight: 600;
-  color: $heading-color;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-black);
   margin-bottom: 10px;
-  transition: color $hoverTransitionDuration ease-in-out;
+  transition: color var(--hover-transition-duration) ease-in-out;
 }
 
 .description {
   font-size: var(--font-size-text);
-  font-weight: 500;
-  color: $text-color;
+  color: var(--text-gray);
   text-align: center;
   max-width: 200px;
-  transition: color $hoverTransitionDuration ease-in-out;
+  transition: color var(--hover-transition-duration) ease-in-out;
 }
 
-@media only screen and (min-width: $mobile) {
+@media only screen and (min-width: 480px) {
   .iconLink {
     flex-basis: 33%;
   }

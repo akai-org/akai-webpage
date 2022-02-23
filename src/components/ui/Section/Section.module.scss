@@ -1,12 +1,10 @@
-@import "../../../styles/vars";
-
 .section {
   &:nth-child(2n) {
-    background-color: $akai-white;
+    background-color: var(--section-background);
   }
 
   &:nth-child(2n + 1) {
-    background-color: $bg-color;
+    background-color: var(--section-background-alt);
   }
 
   padding: 30px;

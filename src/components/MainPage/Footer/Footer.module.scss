@@ -1,7 +1,5 @@
-@import "../../../styles/vars.scss";
-
 .section {
-  color: $heading-color;
+  color: var(--text-black);
   display: flex;
   text-align: center;
   flex-direction: column-reverse;
@@ -20,7 +18,7 @@
   flex-basis: 30%;
 
   a {
-    color: $heading-color;
+    color: var(--text-black);
   }
 }
 
@@ -41,15 +39,15 @@
 
 .iconWrapper {
   padding: 7px;
-  border: 1px solid $text-color;
+  border: 1px solid var(--text-gray);
   border-radius: 50%;
-  fill: $text-color;
-  transition: fill $hoverTransitionDuration ease-in-out,
-    border-color $hoverTransitionDuration ease-in-out;
+  fill: var(--text-gray);
+  transition: fill var(--hover-transition-duration) ease-in-out,
+    border-color var(--hover-transition-duration) ease-in-out;
 
   &:hover {
-    fill: $text-color-hover;
-    border-color: $text-color-hover;
+    fill: var(--text-gray-darker);
+    border-color: var(--text-gray-darker);
   }
 }
 
@@ -60,7 +58,7 @@
   fill: inherit;
 }
 
-@media only screen and (min-width: $tablet) {
+@media only screen and (min-width: 768px) {
   .section {
     flex-direction: row;
     text-align: left;
