@@ -1,5 +1,14 @@
 @import "vars";
 
+:root {
+  --font-size-text: 15px;
+  --font-size-heading: 25px;
+
+  --white: #fff;
+  --akai-orange: #f7a823;
+  --akai-orange-darker: #f78923;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,12 +22,12 @@ html {
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 13px;
+  font-size: var(--font-size-text);
   margin: 0 auto;
 }
 
 p {
   line-height: 1.8;
-  font-size: 15px;
+  font-size: var(--font-size-text);
   color: $text-color;
 }
