@@ -1,0 +1,16 @@
+.section {
+  &:nth-child(2n) {
+    background-color: var(--section-background);
+  }
+
+  &:nth-child(2n + 1) {
+    background-color: var(--section-background-alt);
+  }
+
+  padding: 30px;
+}
+
+.contentWrapper {
+  max-width: 1100px;
+  margin: auto;
+}

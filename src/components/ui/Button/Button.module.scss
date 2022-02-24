@@ -1,0 +1,17 @@
+.button {
+  background-color: var(--akai-orange);
+  border: 0;
+  border-radius: 25px;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: var(--font-size-text);
+  font-family: inherit;
+  font-weight: var(--font-weight-bold);
+  margin: 0 auto;
+  padding: 15px 45px;
+  transition: background-color var(--hover-transition-duration) ease-out;
+
+  &:hover {
+    background-color: var(--akai-orange-darker);
+  }
+}

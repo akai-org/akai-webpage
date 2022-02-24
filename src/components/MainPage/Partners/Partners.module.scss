@@ -1,0 +1,40 @@
+$logoHoverFactor: 1.125;
+$logoHeight: 64px;
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 18px auto;
+  max-width: 640px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.partnersIconsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 30px;
+}
+
+.partnerLink {
+  flex-basis: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: ($logoHeight * ($logoHoverFactor - 1) / 2) 0;
+
+  &:hover {
+    .partnerIcon {
+      transform: scale($logoHoverFactor);
+    }
+  }
+}
+
+.partnerIcon {
+  height: $logoHeight;
+  transition: transform var(--hover-transition-duration) ease-in-out;
+}

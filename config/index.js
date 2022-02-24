@@ -1,5 +1,5 @@
 module.exports = {
-  descr:
+  description:
     "Strona internetowa Akademickiego Koła Aplikacji Internetowych Politechniki Poznańskiej",
   title: "Akademickie Koło Aplikacji Internetowych",
   url: "https://akai.org.pl",
@@ -18,7 +18,5 @@ module.exports = {
     "internetowych",
   ],
   preconnect: ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
-  fonts: [
-    "https://fonts.googleapis.com/css?family=Quicksand&display=swap",
-  ],
+  fonts: ["https://fonts.googleapis.com/css?family=Quicksand&display=swap"],
 };

@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: var(--navbar-height);
+  padding: 12px;
+  transition: 0.25s background ease-in-out;
+
+  &__solid {
+    background: var(--navbar-color);
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 12px;
+}
+
+.linksWrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--navbar-color);
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform ease-in-out 0.25s;
+}
+
+.links {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 24px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: var(--font-size-heading);
+  transition: 0.25s color ease-in-out;
+
+  &__active {
+    color: var(--akai-orange);
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+%hamburgerTriggerBar {
+  background: var(--navbar-hamburger-color);
+  position: relative;
+  display: block;
+  height: 3px;
+  transition: transform 0.2s ease-out 0s, background-color 0.2s ease-out 0.2s,
+    top 0.2s ease-out 0.3s;
+  width: 30px;
+}
+
+%hamburgerTriggerBarChecked {
+  transition: top 0.2s ease-out 0s, background-color 0s ease 0.2s,
+    transform 0.2s ease-out 0.3s;
+}
+
+.hamburgerTrigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 12px;
+  padding: 20px 8px;
+
+  span {
+    @extend %hamburgerTriggerBar;
+
+    &::before {
+      @extend %hamburgerTriggerBar;
+      content: "";
+      top: 10px;
+    }
+
+    &::after {
+      @extend %hamburgerTriggerBar;
+      content: "";
+      top: -12px;
+    }
+  }
+}
+
+.hamburger:checked {
+  & ~ .linksWrapper {
+    transform: scale(1);
+
+    & .links {
+      opacity: 1;
+      transition: opacity 0.25s ease-in-out 0.25s;
+    }
+  }
+
+  & ~ .hamburgerTrigger span {
+    background: transparent;
+    @extend %hamburgerTriggerBarChecked;
+
+    &::before {
+      @extend %hamburgerTriggerBarChecked;
+      top: 0px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      @extend %hamburgerTriggerBarChecked;
+      top: -2px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hamburgerTrigger {
+    display: none;
+  }
+
+  .linksWrapper {
+    height: auto;
+    position: static;
+    background: transparent;
+    transform: none;
+    transition: transform none;
+  }
+
+  .links {
+    height: auto;
+    opacity: 1;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .link {
+    font-size: var(--font-size-text);
+  }
+}

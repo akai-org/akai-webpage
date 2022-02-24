@@ -9,18 +9,18 @@ const SEO = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta property="og:title" content={meta.title} />
       <meta property="og:url" content={meta.url} />
-      <meta property="og:description" content={meta.descr} />
+      <meta property="og:description" content={meta.description} />
       <meta property="og:image" content={meta.url + meta.img} />
       <meta property="og:site_name" content={meta.name} />
       <meta property="og:type" content="website" />
 
       <meta name="twitter:title" content={meta.title} />
-      <meta name="twitter:description" content={meta.descr} />
+      <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.url + meta.img} />
       <meta name="twitter:site" content={meta.url} />
       <meta name="twitter:card" content="summary" />
 
-      <meta name="description" content={meta.descr} />
+      <meta name="description" content={meta.description} />
       <meta name="keywords" content={meta.keywords.join(",")} />
       <meta name="theme-color" content="#f9a11b" />
       <link rel="image_src" href={meta.img} />

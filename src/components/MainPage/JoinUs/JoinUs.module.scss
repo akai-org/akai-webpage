@@ -1,0 +1,52 @@
+.description {
+  margin: 0 auto 30px;
+  text-align: center;
+  max-width: 500px;
+}
+
+.sectionDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.sectionColumn {
+  flex: 1;
+  max-width: 500px;
+
+  & + & {
+    padding-top: 20px;
+  }
+}
+
+.sectionImage {
+  width: 100%;
+  box-shadow: 0 3px 30px -5px rgba(0, 0, 0, 0.75);
+}
+
+.contactWrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionColumn {
+    margin: 0 15px;
+
+    & + & {
+      padding-top: 0px;
+    }
+  }
+
+  .sectionDetails {
+    flex-direction: row;
+    text-align: initial;
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}

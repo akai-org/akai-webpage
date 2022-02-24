@@ -1,0 +1,35 @@
+.title {
+  color: var(--text-black);
+  font-size: var(--font-size-heading);
+  margin: 15px 0;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--akai-orange);
+    height: 3px;
+    width: 40px;
+  }
+}
+
+.center {
+  text-align: center;
+
+  &::after {
+    margin: 15px auto 25px;
+  }
+}
+
+.left {
+  @extend .center;
+}
+
+@media only screen and (min-width: 768px) {
+  .left {
+    text-align: left;
+
+    &::after {
+      margin: 15px 0 25px;
+    }
+  }
+}
