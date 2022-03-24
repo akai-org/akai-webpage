@@ -1,5 +1,6 @@
 $logoHoverFactor: 1.125;
 $logoHeight: 64px;
+$maxLogoWidth: 160px;
 
 .section {
   flex: 1;
@@ -36,5 +37,6 @@ $logoHeight: 64px;
 
 .partnerIcon {
   height: $logoHeight;
+  max-width: $maxLogoWidth;
   transition: transform var(--hover-transition-duration) ease-in-out;
 }
