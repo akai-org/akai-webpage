@@ -5,8 +5,13 @@ import styles from "./Partners.module.scss";
 const partnersLinksConfig = [
   {
     name: "AppUnite",
-    url: "https://appunite.com/",
+    url: "https://appunite.com",
     icon: "AppUnite.png",
+  },
+  {
+    name: "WithSecure",
+    url: "https://www.withsecure.com/",
+    icon: "WithSecure.svg",
   },
 ];
 
