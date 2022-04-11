@@ -11,7 +11,7 @@ const partnersLinksConfig = [
   {
     name: "WithSecure",
     url: "https://www.withsecure.com/",
-    icon: "WithSecure.png",
+    icon: "WithSecure.svg",
   },
 ];
 
