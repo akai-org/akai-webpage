@@ -13,6 +13,11 @@ const partnersLinksConfig = [
     url: "https://www.withsecure.com/",
     icon: "WithSecure.svg",
   },
+  {
+    name: "Inetum Polska",
+    url: "https://inetum.pl/pl/",
+    icon: "Inetum.svg",
+  },
 ];
 
 function PartnerLink({ name, url, icon }) {
