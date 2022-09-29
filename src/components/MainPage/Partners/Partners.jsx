@@ -18,6 +18,16 @@ const partnersLinksConfig = [
     url: "https://inetum.pl/pl/",
     icon: "Inetum.svg",
   },
+  {
+    name: "Nobl9",
+    url: " https://www.nobl9.com/",
+    icon: "nobl9.svg",
+  },
+  {
+    name: "Wunderman Thompson Technology",
+    url: "https://www.wundermanthompson.com/",
+    icon: "WT.svg",
+  },
 ];
 
 function PartnerLink({ name, url, icon }) {
