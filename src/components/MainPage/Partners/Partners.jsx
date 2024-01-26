@@ -24,9 +24,9 @@ const partnersLinksConfig = [
     icon: "nobl9.svg",
   },
   {
-    name: "Wunderman Thompson Technology",
-    url: "https://www.wundermanthompson.com/",
-    icon: "WT.svg",
+    name: "VML",
+    url: "https://www.vml.com/",
+    icon: "VML.png",
   },
 ];
 
